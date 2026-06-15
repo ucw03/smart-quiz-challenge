@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Result</title>
+
+<link rel="stylesheet" href="result.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="confetti"></div>
+
+<div class="result-container">
+
+<h1>🎉 Quiz Completed 🎉</h1>
+
+<img id="awardImage" src="" alt="Award">
+
+<h2 id="badgeTitle"></h2>
+
+<h3 id="scoreText"></h3>
+
+<p id="performance"></p>
+
+<div class="btn-group">
+
+
+<button onclick="GenerateCertificate()">
+📜 Download Certificate
+</button><br><br>
+
+
+<button onclick="restartQuiz()">
+🔄 Restart Quiz
+</button>
+
+<button onclick="openLeaderboard()">
+🏆 Leaderboard
+</button>
+
+</div>
+
+</div>
+
+<div id="certificate">
+
+<h1>CERTIFICATE OF PARTICIPATION</h1>
+
+<hr>
+
+<p>This Certificate is Proudly Presented To</p>
+
+<h2 id="participantName">
+Participant
+</h2>
+
+<p>
+For Successfully Participating in
+</p>
+
+<h3>SMART QUIZ CHALLENGE</h3>
+
+<p id="certificateScore"></p>
+
+<p class="footer">
+Keep Learning • Keep Growing
+</p>
+
+</div>
+
+<script src="result.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate</title>
+
+    <style>
+
+        body{
+            margin:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            font-family:Georgia, serif;
+            background:#f0f0f0;
+        }
+
+        .certificate{
+
+            width:1100px;
+            height:750px;
+
+            background-image:url("images/certificate-bg.jpg");
+            background-size:cover;
+            background-position:center;
+
+            position:relative;
+            text-align:center;
+        }
+
+        .logo{
+            width:100px;
+            margin-top:30px;
+
+        }
+
+        .title{
+            font-size:35px;
+            font-weight:bold;
+            margin-top:20px;
+            color:#002147;
+        }
+
+        .presented{
+            font-size:24px;
+            margin-top:20px;
+        }
+
+        .name{
+            font-size:50px;
+            font-weight:bold;
+            color:#b8860b;
+            margin-top:15px;
+        }
+        
+
+        .score{
+            font-size:24px;
+            margin-top:25px;
+        }
+
+        .category{
+            font-size:24px;
+            margin-top:15px;
+        }
+
+        .bottom{
+            position:absolute;
+            bottom:70px;
+            width:100%;
+            display:flex;
+            margin-Top: 150px;
+            justify-content:space-around;
+        }
+
+        .section{
+            text-align:center;
+        }
+
+        .line{
+            width:200px;
+            border-top:2px solid black;
+            margin-top:10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="certificate">
+
+    <img src="images/surana.png" class="logo">
+
+    <div class="title">
+        CERTIFICATE OF ACHIEVEMENT
+    </div>
+
+    <img src="images/logo.png" class="logo">
+
+    <div class="presented">
+        Presented To
+    </div>
+
+    <div class="name" id="participantName">
+        Participant Name
+    </div>
+
+    <div class="score">
+        Score :
+        <span id="participantScore"></span>
+    </div>
+
+    <div class="category">
+        Category :
+        <span id="participantCategory"></span><br><br>
+    </div>
+
+    <div class="bottom">
+
+        <div class="section">
+            <div id="certificateDate"></div>
+            <div class="line"></div>
+            Date
+        </div>
+
+        <div class="section">
+            Quiz Organizer
+            <div class="line"></div>
+            Signature
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("participantName").innerText =
+localStorage.getItem("playerName");
+
+document.getElementById("participantScore").innerText =
+localStorage.getItem("score") + "/" +
+localStorage.getItem("total");
+
+document.getElementById("participantCategory").innerText =
+localStorage.getItem("category");
+
+document.getElementById("certificateDate").innerText =
+"17/06/2025";
+
+</script>
+
+</body>
+</html>

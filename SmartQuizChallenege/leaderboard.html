@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Leaderboard</title>
+
+<link rel="stylesheet" href="leaderboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<img src="images/logo.png" class="logo">
+
+<h1>SMART QUIZ CHALLENGE</h1>
+
+<p>College Knowledge Event</p>
+
+</header>
+
+<div class="leaderboard-container">
+
+<h2>🏆 TOP PERFORMERS 🏆</h2>
+
+<div class="top-three">
+
+<div class="rank-card silver">
+
+<img src="images/silver-badge.png">
+
+<h3>2nd Place</h3>
+
+<p id="secondPlace">--</p>
+
+</div>
+
+<div class="rank-card gold">
+
+<img src="images/trophy.png">
+
+<h3>1st Place</h3>
+
+<p id="firstPlace">--</p>
+
+</div>
+
+<div class="rank-card bronze">
+
+<img src="images/bronze-badge.png">
+
+<h3>3rd Place</h3>
+
+<p id="thirdPlace">--</p>
+
+</div>
+
+</div>
+
+<h2>All Participants</h2>
+
+<ul id="leaderboardList"></ul>
+
+<button onclick="goHome()">
+🏠 Home
+</button>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Smart Quiz Challenge
+</p>
+
+<p>
+Developed for College Event
+</p>
+
+</footer>
+
+<script src="leaderboard.js"></script>
+
+</body>
+</html>
